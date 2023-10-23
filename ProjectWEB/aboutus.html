@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="aboutus.css" />
+    <script src="aboutus.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+          <h1><strong>SOKA</strong></h1>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="site.html#description">Opportunities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="site.html#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="site.html#price">Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="site.html#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="site.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+               </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <section class="container" id="about">
+      <h2>About us</h2>
+      <p>Welcome to SOKA Gym - Where Fitness Meets Excellence!</p>
+
+      <button class="accordion">Our Story</button>
+      <div class="panel">
+        <p>Established in 2010, SOKA Gym has been a beacon of fitness, health, and wellness in our community for over a decade. Our journey began with a simple yet profound goal: 
+          to assist our clients in achieving their fitness ambitions and enhancing their overall well-being. 
+          Over the years, we've evolved into a trusted partner, guiding countless individuals on their transformative fitness journeys.</p>
+      </div>
+
+      <button class="accordion">Our Core Values</button>
+      <div class="panel">
+        <p>At SOKA Gym, our core values drive everything we do:</p>
+        <ul>
+          <li class="our"><strong>Health and Well-being:</strong> We are deeply committed to the health and well-being of our clients. Our mission is to provide a safe and inspiring environment where individuals can achieve their peak physical condition.</li>
+          <li class="our"><strong>Professionalism and Quality:</strong> Our team consists of highly skilled trainers and instructors who are dedicated to helping you realize your goals. We pride ourselves on delivering top-notch equipment and services.</li>
+          <li class="our"><strong>Community and Inspiration:</strong> SOKA Gym is more than just a fitness facility; it's a vibrant community of fitness enthusiasts who motivate and inspire one another to surpass their limits.</li>
+        </ul>
+      </div>
+      
+      <button class="accordion">Our Mission</button>
+      <div class="panel">
+        <p>Our fitness programs and services are meticulously designed to serve a singular purpose: to empower you to become the best version of yourself. We aspire to inspire and 
+          support our clients in their fitness journeys, helping them attain and maintain their fitness objectives.</p>
+      </div>
+
+      <button class="accordion">Join the SOKA Experience</button>
+      <div class="panel">
+        <p>Come be a part of the SOKA Gym experience and embark on a transformative fitness adventure. We take immense pride in assisting our clients in pushing their boundaries and attaining remarkable results.
+          <br>
+          Whether you're a seasoned athlete or taking your first step into the world of fitness, SOKA Gym is here to guide you every step of the way. Let's strive for excellence together!
+          <br>
+          Feel free to use this text as-is or make any necessary adjustments to fit your website's style and branding.</p>
+      </div>
+    </section>
+    <footer class="container">
+        <hr class="lasthr">
+        <div class="est"><em>© 2010, SOKA</em></div>
+    </footer>
+
+    <!-- When we click on a topic, the section is activated -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() 
+        {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        });
+      }
+      </script>
+  </body>
+</html>
